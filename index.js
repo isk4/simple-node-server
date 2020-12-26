@@ -40,9 +40,8 @@ const server = http.createServer((request, response) => {
     response.setHeader('Content-Type', 'text/html');
     response.end(`<html><body><h1>404: ${request.method} method not supported.</h1></body></html>`);
   }
-
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}`)
+  console.log(`Server running at http://${hostname}:${port}`);
 });
