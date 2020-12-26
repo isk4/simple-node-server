@@ -38,7 +38,7 @@ const server = http.createServer((request, response) => {
   } else {
     response.statusCode = 404;
     response.setHeader('Content-Type', 'text/html');
-    response.end(`<html><body><h1>404: ${request.method} not supported.</h1></body></html>`);
+    response.end(`<html><body><h1>404: ${request.method} method not supported.</h1></body></html>`);
   }
 
 });
